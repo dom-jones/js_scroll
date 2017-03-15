@@ -1,6 +1,11 @@
 $bg-color: #9577E9;
 $text-color: #F0EEF7;
 
+.row {
+    background-color: $bg-color;
+    color: $text-color;
+}
+
 $x:1;
 
 @while $x < 13 {
