@@ -1,0 +1,9 @@
+$bg-color: #9577E9;
+$text-color: #F0EEF7;
+
+$x:1;
+
+@while $x < 13 {
+    .col-#{$x} { width: 100/12 * $x;}
+    $x: $x + 1;
+};
