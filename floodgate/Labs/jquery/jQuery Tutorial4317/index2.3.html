@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <title></title>
+    <style>
+        li { color:black;} 
+        /*ul.emphasis > li {
+            color: red;
+        } */
+    </style>
+</head>
+
+<body>
+
+<div class='container'>
+    <h1> Welcome to my Website </h1>
+    <p> jlksjfsakjfasjfsaklfjslfjalsjfsakjfskjfskaljfklasjfklasjfaskjfaskjfaskljfaslkfjalksfjaslkfjlk
+        skfhasjkhfjaskhfasjkhfasjkhfjaskhfjaskfhskjfaskfl;askf;laskf;lska;lkf;lskfs;alkfl;sakflas;kfl;
+        fsakfms,mfnms,dnmsd,nfgm,sdngm,dngm,dngm,dgndm,gnmd,gnmd,fgnmd,fgnmd
+    </p>
+
+    <ul class='emphasis'>
+        <li> Item</li>
+        <li> Item 2</li>
+        <li> Item 3</li>
+        <li>
+            <ul>
+                <li>Hello from the nest.</li>
+            </ul>
+        </li>
+    </ul>
+   
+</div>
+
+
+<!---<script src="jquery-1.7.1.js"></script>------>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script>
+       // $('ul.emphasis')
+       // $('ul.emphasis').children('li').css('color', 'purple'); //stick with a strict specific method for what you want to do.
+        $('ul.emphasis').find('li:first-child').addClass('emphasis');
+      // $('ul.emphasis').find('li:nth-child(1)').addClass('emphasis');
+      // $('ul.emphasis').children('li:first-child').addClass('emphasis'); custom selector: jquery specific
+      // $('ul.emphasis').children('li').first().addClass('emphasis'); first method
+      // $('ul.emphasis').children('li:nth-child(2).text('added with jquery') set the text, take the value out and specify the element.
+     // $('ul.emphasis').children('li').eq(2).text('added with jquery') eq lets you pass an integer, another way of selecting a specific children
+     
+</script>
+
+
+</body>
+</html>
